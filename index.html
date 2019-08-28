@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+  <meta name="google-site-verification" content="rp2DfFK_iSAW48ZmK_ZoOKNj5LRjp71YUZddM1-cCGU" />
+  <meta charset="utf-8">
+  <title>UHACK19</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"">
+    <meta name=" apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#091822">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#091822">
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      if (navigator.userAgent.indexOf('Safari') != -1
+        && navigator.userAgent.indexOf('Chrome') == -1) {
+        let illustration = document.getElementById("landing-illustration");
+        illustration.setAttribute("src", "./assets/img/v6-tower.png")
+      }
+    });
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109906061-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-109906061-2');
+  </script>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.9/typed.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.4.1/js/all.js"
+    integrity="sha384-L469/ELG4Bg9sDQbl0hvjMq8pOcqFgkSpwhwnslzvVVGpDjYJ6wJJyYjvG3u8XW7"
+    crossorigin="anonymous"></script>
+  <link rel="icon" type="image/png" href="img/RED.png" />
+</head>
+
+<body>
+  <progress value="0" id="progressBar">
+    <div class="progress-container"></div>
+  </progress>
+
+  <section class="landing-container justify-content-center" id="landing">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-7 landing-left">
+          <img class="logo landing-logo Width40" src="img/RED.png" />
+          <div>
+            <div class="title">
+              <h1 id="hackdavis"><b>Usict Hack</b></h1>
+            </div>
+            <div class="details">
+              <code class="facts" id="typed" style="animation: fadeIn .5s both;animation-delay: .20s;"></code>
+              <code class="facts"
+                style="animation: fadeIn .5s both;animation-delay: .25s;"><br><br>October 11 – 12, 2019</code>
+              <code class="facts"
+                style="animation: fadeIn .5s both;animation-delay: 0.35s;"><br><a target="_blank" href="https://goo.gl/maps/7pjdBj3m3kt">GGSIPU, Dwarka, Delhi</a></code>
+            </div>
+          </div>
+          <div>
+            <!--Application Form-->
+            <a id="apply-button" href="http://bit.ly/webHDelhi" target="_blank" rel="noopener noreferrer">
+              <button disabled class="get-notified">Apply</button>
+              <!-- <code id="apply-hint">Hackers</code> -->
+              <code id="apply-hint">Applications Not Open Yet</code>
+            </a>
+            <!--Email-->
+            <a href="index.html#sponsor" rel="noopener noreferrer">
+              <button class="sponsor-us">Sponsor Us</button>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="landing-picture">
+            <img id="landing-illustration" src="assets/img/v6-tower.svg" alt="tower" class="tower">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats-container">
+    <div>
+      <div class="container">
+        <h1 class="social-good-text" data-entrance="fade" style="text-align:center; margin-bottom: 30px;">
+          <span class="underline hack">About UsictHACK</span>
+        </h1>
+        <h5 class="social-good-text" data-entrance="fade" style="color: white;margin-bottom: 100px">
+          At UsictHACK, we are aiming to provide a hacking and networking platform by bringing people from a multitude
+          of organisations,educational backgrounds ,belonging to different stratas of society for a whole new arena of
+          excitement,coding and sheer brilliance. And at what cost, Zero. Zip. Zilch. Nada. Nothing! Its a deliquescent
+          combination of Hackathon, DevRelCon and Hiring Fair, that serves to every kind of aspirations.
+        </h5>
+        <div class="row" style="margin-top: 30px">
+          <div class="col-md-4 readable-text-col" data-entrance="fade">
+            <div class="tracks-header">
+              <div class="tracks-picture">
+                <center>
+                  <img src="assets/img/conference.svg" alt="conference" class="imgSize">
+                </center>
+              </div>
+              <h2 class="tracks-title">
+                <span class="underline health">DevRelConf</span>
+              </h2>
+            </div>
+            <p class="tracks-des">
+              An event aiming at the assimilation of developers advocates of multiple organisations, sharing their
+              knowledge and experiences.
+            </p>
+          </div>
+          <div class="col-md-4 readable-text-col" data-entrance="fade" data-entrance-delay="100">
+            <div class="tracks-header">
+              <div class="tracks-picture">
+                <center>
+                  <img src="assets/img/hackathon.svg" alt="plant" class="imgSize">
+                </center>
+              </div>
+              <h2 class="tracks-title">
+                <span class="underline environment">Hackathon</span>
+              </h2>
+            </div>
+            <p class="tracks-des">
+              An event, typically lasting several days, in which a large number of people meet to engage in
+              collaborative computer programming.
+            </p>
+          </div>
+          <div class="col-md-4 readable-text-col" data-entrance="fade" data-entrance-delay="200">
+            <div class="tracks-header">
+              <div class="tracks-picture">
+                <center>
+                  <img src="assets/img/hiring.svg" alt="book" class="imgSize">
+                </center>
+              </div>
+              <h2 class="tracks-title">
+                <span class="underline education">Hiring Fair</span>
+              </h2>
+            </div>
+            <p class="tracks-des">
+              A venue where the employer will witness the work of the foreseeable employees, and the attendees will be
+              able to choose the track and companies they see fit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="section-title" data-entrance="fade">
+      <span class="underline schedule">Glimpses of last UHACKs</span>
+    </p>
+    <div class="container stats-content">
+      <ul class="list-features justify-content-center row align-items-center">
+        <li class="col-lg-3 col-sm-6" data-entrance="fade">
+          <h2 class="stats">300<small>+</small></h2>
+          <code>Hackers</code>
+        </li>
+        <li class="col-lg-3 col-sm-6" data-entrance="fade" data-entrance-delay="100">
+          <h2 class="stats">30</h2>
+          <code>Hours</code>
+        </li>
+        <li class="col-lg-3 col-sm-6" data-entrance="fade" data-entrance-delay="200">
+          <h2 class="stats"><sup></sup>Prizes</h2>
+          <code>Prizes worth INR 1Lac</code>
+        </li>
+        <li class="col-lg-3 col-sm-6" data-entrance="fade" data-entrance-delay="300">
+          <h2 class="stats">100<small>+</small></h2>
+          <code>Projects</code>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="about-container">
+    <div class="container about-content" data-entrance="fade">
+      <div class="row">
+        <div class="col-md-7 readable-text-col social-good-left">
+          <h1 class="social-good-text" data-entrance="fade">
+            <span class="underline hack">Celebrating Diversity</span>
+          </h1>
+          <!-- <p class="about-text">
+            With the rapid advancement of technology, it is important to use its power in ways that benefit society.
+          </p> -->
+          <p class="about-text">
+            We create an environment that brings developers together irrespective of their
+            <strong>gender, race, sexual orientation, socioeconomic background or ethnicity.</strong>
+            Ever since its inception Hack Delhi has been extremely devoted to the cause of
+            <strong>celebrating diversity among its participants.</strong>
+            We wish to promote Girls in Tech , so we will be having an exclusive prize for the best Girl's team.
+            <strong>Also 30% of the spots are reserved for female participants.</strong>
+          </p>
+        </div>
+        <div class="col-md-5 social-good-right">
+          <img src="assets/img/v3-social-good-small.png" alt="social-good" class="social-good">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tracks-container" style="text-align:center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 readable-text-col" data-entrance="fade">
+          <div class="tracks-header">
+            <div class="tracks-picture">
+              <img src="assets/img/heart.svg" alt="heart" class="tracks-img">
+            </div>
+            <h2 class="tracks-title">
+              <span class="underline health">Health</span>
+            </h2>
+          </div>
+          <p class="tracks-des">
+            Develop a product that encourages people to live a healthier lifestyle. Help predict and prevent illnesses
+            before they affect the body.
+          </p>
+        </div>
+        <div class="col-md-4 readable-text-col" data-entrance="fade" data-entrance-delay="100">
+          <div class="tracks-header">
+            <div class="tracks-picture">
+              <img src="assets/img/plant.svg" alt="plant" class="tracks-img">
+            </div>
+            <h2 class="tracks-title">
+              <span class="underline environment">Environment</span>
+            </h2>
+          </div>
+          <p class="tracks-des">
+            Aggregate public data to analyze or improve government green energy policies. Design solutions to reduce
+            energy consumption in habitable spaces.
+          </p>
+        </div>
+        <div class="col-md-4 readable-text-col" data-entrance="fade" data-entrance-delay="200">
+          <div class="tracks-header">
+            <div class="tracks-picture">
+              <img src="assets/img/book.svg" alt="book" class="tracks-img">
+            </div>
+            <h2 class="tracks-title">
+              <span class="underline education">Education</span>
+            </h2>
+          </div>
+          <p class="tracks-des">
+            Discover new ways to faciliate learning within the classroom. Enable accessible education for individuals
+            with learning disabilities.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="schedule-container">
+    <p class="section-title" data-entrance="fade">
+      <span class="underline schedule">schedule</span>
+    </p>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="day" data-entrance="fade">
+            <div class="day-title">
+              Friday
+            </div>
+            <div class="day-date">
+              11 Oct,19
+            </div>
+            <div class="time-box">
+              <p>am</p>
+            </div>
+            <div class="event">
+              <div class="time">
+                10
+              </div>
+              <div class="details">
+                <div class="event-title">
+                  check in
+                </div>
+              </div>
+            </div>
+            <div class="event">
+              <div class="time">
+                11
+              </div>
+              <div class="details">
+                <div class="event-title">
+                  Briefing
+                </div>
+              </div>
+            </div>
+            <div class="time-box">
+              <p>pm</p>
+            </div>
+            <div class="event">
+              <div class="time">
+                12
+              </div>
+              <div class="details">
+                <div class="event-title">
+                  Hacking Begins
+                </div>
+              </div>
+            </div>
+            <div class="event">
+              <div class="time">
+                2
+              </div>
+              <div class="details">
+                <div class="event-title">
+                  Lunch
+                </div>
+              </div>
+            </div>
+            <div class="event">
+              <div class="time">
+                5
+              </div>
+              <div class="details">
+                <div class="event-title">
+                  Snacks
+                </div>
+              </div>
+            </div>
+            <div class="event">
+              <div class="time">
+                9
+              </div>
+              <div class="details">
+                <div class="event-title">
+                  Dinner
+                </div>
+              </div>
+            </div>
+            <div class="event">
+              <div class="time">
+                11
+              </div>
+              <div class="details">
+                <div class="event-title">
+                  Mentoring & Midnight Evaluation
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="day" data-entrance="fade" data-entrance-delay="100">
+            <div class="day-title">
+              Saturday
+            </div>
+            <div class="day-date">
+              12 Oct,19
+            </div>
+            <div class="time-box">
+              <p>am</p>
+            </div>
+            <div class="event">
+              <div class="time">
+                3
+              </div>
+              <div class="details">
+                <div class="event-title">
+                  Mid-Night Snacks
+                </div>
+              </div>
+            </div>
+            <div class="event">
+              <div class="time">
+                9
+              </div>
+              <div class="details">
+                <div class="event-title">
+                  Breakfast
+                </div>
+              </div>
+            </div>
+            <div class="time-box">
+              <p>
+                pm
+              </p>
+            </div>
+            <div class="event">
+              <div class="time">
+                12
+              </div>
+              <div class="details">
+                <div class="event-title">
+                  Pitching Starts
+                </div>
+              </div>
+            </div>
+            <div class="event">
+              <div class="time">
+                1
+              </div>
+              <div class="details">
+                <div class="event-title">
+                  Winner Announced
+                </div>
+              </div>
+              <div class="event">
+                <div class="time">
+                  2
+                </div>
+                <div class="details">
+                  <div class="event-title">
+                    lunch
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq-container">
+    <div class="container">
+      <p class="section-title" data-entrance="fade">
+        <span class="underline faq">FAQ</span>
+      </p>
+      <div class="faq-content center">
+        <div class="accordion">
+          <div class="accordion-item" data-entrance="fade">
+            <a class="question">What is a hackathon?</a>
+            <div class="content">
+              <p class="answer">
+                A hackathon (also known as a hack day, hackfest or codefest) is a design sprint-like event in which
+                computer programmers and others involved in software development,
+                including graphic designers, interface designers, project managers, and others, often including
+                subject-matter-experts, collaborate intensively on software projects.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item" data-entrance="fade">
+            <a class="question">Am I invited?</a>
+            <div class="content">
+              <p>
+                Anyone that is currently a college student or that has graduated in the past year is invited. High
+                schoolers can go ahead and apply and we'll notify you if any problems come
+                about.
+                <br> <br>
+                We will be holding workshops throughout the year for students to immerse themselves into the world of
+                hackathons and technology.
+                These workshops will be held by industry professionals and members of our team, who will teach new and
+                upcoming tools that assist with web development, mobile development,
+                and more.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item" data-entrance="fade">
+            <a class="question">What should I bring?</a>
+            <div class="content">
+              <p>
+                Bring your student ID, laptop, chargers. A pillow and sleeping bag may be useful as well. Please leave
+                anything illegal at home.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item" data-entrance="fade">
+            <a class="question">What if this is my first hackathon?</a>
+            <div class="content">
+              <p>
+                Awesome! We have prizes for newcomers, as the best way to learn is by building. There will be mentors
+                to help you every step of the way. We all start somewhere, why not here?
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item" data-entrance="fade">
+            <a class="question">How long is it?</a>
+            <div class="content">
+              <p>
+                You will have 24 hours to build but we will also have opening and closing ceremonies as well as the
+                project expo. Prepare to spend your weekend with us starting Friday night and we’ll have you out around
+                midday on Sunday. A more detailed scheduled will be released closer to the event.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item" data-entrance="fade">
+            <a class="question">How much does it cost?</a>
+            <div class="content">
+              <p>
+                It is free for all admitted participants. Don’t sweat it! We will provide your WiFi, meals, caffeine,
+                swag, and workspace for the entire weekend.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item" data-entrance="fade">
+            <a class="question">How do teams work?</a>
+            <div class="content">
+              <p>
+                Teams have a maximum of 5. If you don’t have a team, no sweat, we will have a mixer for you to discuss
+                ideas and meet other hackers to join forces.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="sponsors-container">
+    <div class="container">
+
+      <p class="section-title" data-entrance="fade">
+        <span class="underline sponsors sponsors-text">Past sponsors</span>
+      </p>
+
+      <!-- Sponser images -->
+      <div class="container" data-entrance="fade">
+
+        <!-- Diamond Sponsors -->
+        <div class="row">
+          <div class="col-sm-8 offset-sm-2">
+            <div class="cohost-line">CO-HOSTED BY</div>
+            <a class="sponsors-link" href="https://ultrahack.org">
+              <img class="img-fluid diamond-sponsor" src="sponsors/ultrahack.png">
+            </a>
+          </div>
+        </div>
+        <br>
+
+        <!-- Gold Sponsors -->
+        <div class="row">
+          <div class="col-sm-6">
+            <a class="sponsors-link" href="https:/mozilla.org">
+              <img class="img-fluid gold-sponsor" src="sponsors/cblogo.png">
+            </a>
+          </div>
+          <div class="col-sm-6">
+            <a class="sponsors-link" href="https:/github.com">
+              <img class="img-fluid gold-sponsor" src="sponsors/Paytm_logo.png">
+            </a>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-sm-6">
+            <a class="sponsors-link" href="https://producthunt.com">
+              <img class="img-fluid silver-sponsor" src="sponsors/podio.png">
+            </a>
+          </div>
+          <div class="col-sm-6">
+            <a class="sponsors-link" href="https://www.codingninjas.in/">
+              <img class="img-fluid silver-sponsor" src="sponsors/earning_labs.png">
+            </a>
+          </div>
+        </div>
+
+        <!-- gold Sponsors -->
+        <div class="row">
+          <!-- <div class="col-lg-4 col-6">
+            <a class="sponsors-link" href="https://www.aorus.com">
+              <img class="img-fluid gold-sponsor" src="sponsors/aorus.png">
+            </a>
+          </div>
+          <div class="col-lg-4 col-6">
+            <a class="sponsors-link" href="https://iotw.io/">
+              <img class="img-fluid gold-sponsor" src="sponsors/iotw.png">
+            </a>
+          </div>
+          <div class="col-lg-4 col-6">
+            <a class="sponsors-link" href="https://estimote.com/">
+              <img class="img-fluid gold-sponsor" src="sponsors/estimote.png">
+            </a>
+          </div> -->
+          <div class="col-lg-4 col-6">
+            <a class="sponsors-link" href="https://get.tech">
+              <img class="img-fluid gold-sponsor" src="sponsors/blogx.jpg">
+            </a>
+          </div>
+          <div class="col-lg-4 col-6">
+            <a class="sponsors-link" href="http://hackp.ac/mlh-stickermule-hackathons">
+              <img class="img-fluid gold-sponsor" src="sponsors/barista_beverage.jpg">
+            </a>
+          </div>
+          <div class="col-lg-4 col-6">
+            <a class="sponsors-link" href="https://www.stickeryou.com">
+              <img class="img-fluid gold-sponsor" src="sponsors/redbull.png">
+            </a>
+          </div>
+          <div class="col-lg-4 col-6">
+            <a class="sponsors-link" href="https://jetbrains.com">
+              <img class="img-fluid gold-sponsor" src="sponsors/hoa.png">
+            </a>
+          </div>
+          <div class="col-lg-4 col-6">
+            <a class="sponsors-link" href="http://cloudsploit.com">
+              <img class="img-fluid gold-sponsor" src="sponsors/domainX.png">
+            </a>
+          </div>
+          <div class="col-lg-4 col-6">
+            <a class="sponsors-link" href="https://zulipchat.com/">
+              <img class="img-fluid gold-sponsor" src="sponsors/wild-water.png">
+            </a>
+          </div>
+          <div class="col-lg-4 col-6">
+            <a class="sponsors-link" href="https://www.sketch.com/">
+              <img class="img-fluid gold-sponsor" src="sponsors/reappoint.jpg">
+            </a>
+          </div>
+          <div class="col-lg-4 col-6">
+            <a class="sponsors-link" href="hhttps://balsamiq.com/">
+              <img class="img-fluid gold-sponsor" src="sponsors/agro.jpg">
+            </a>
+          </div>
+          <div class="col-lg-4 col-6">
+            <a class="sponsors-link" href="https://www.wolframalpha.com/">
+              <img class="img-fluid gold-sponsor" src="sponsors/incubate-IND.png">
+            </a>
+          </div>
+          <div class="col-lg-4 col-6">
+            <a class="sponsors-link" href="https://www.wolframalpha.com/">
+              <img class="img-fluid gold-sponsor" src="sponsors/gamex.jpg">
+            </a>
+          </div>
+          <div class="col-lg-4 col-6">
+            <a class="sponsors-link" href="https://www.wolframalpha.com/">
+              <img class="img-fluid gold-sponsor" src="sponsors/mhost.png">
+            </a>
+          </div>
+          <div class="col-lg-4 col-6">
+            <a class="sponsors-link" href="https://www.wolframalpha.com/">
+              <img class="img-fluid gold-sponsor" src="sponsors/walls.png">
+            </a>
+          </div>
+          <div class="col-lg-4 col-6">
+            <a class="sponsors-link" href="https://www.wolframalpha.com/">
+              <img class="img-fluid gold-sponsor" src="sponsors/herm-logo2.png">
+            </a>
+          </div>
+          <!-- <
+          <div class="col-lg-4 col-6">
+            <a class="sponsors-link" href="https://www.kindsnacks.com">
+              <img class="img-fluid gold-sponsor" src="sponsors/kind.png">
+            </a>
+          </div>
+          <div class="col-lg-4 col-6">
+            <a class="sponsors-link" href="https://www.popchips.com/">
+              <img class="img-fluid gold-sponsor" src="sponsors/popchips.png">
+            </a>
+          </div>
+          <div class="col-lg-4 col-6">
+            <a class="sponsors-link" href="https://insomniacookies.com/">
+              <img class="img-fluid gold-sponsor" src="sponsors/insomnia_cookies.png">
+            </a>
+          </div>
+          <div class="col-lg-4 offset-lg-4 col-6">
+            <a class="sponsors-link" href="https://emmysorganics.com">
+              <img class="img-fluid gold-sponsor" src="sponsors/emmys_organics.png">
+            </a>
+          </div>
+        </div>
+
+        <!-- Partners -->
+          <!-- <br><br><br>
+        <p class="section-title" data-entrance="fade">
+          <span class="underline sponsors">partners</span>
+        </p>
+        <div class="container" data-entrance="fade">
+          <div class="row">
+            <div class="col-lg-4 col-6">
+              <a class="sponsors-link" href="https://mlh.io">
+                <img class="img-fluid gold-sponsor" src="sponsors/mlh.png">
+              </a>
+            </div>
+            <div class="col-lg-4 col-6">
+              <a class="sponsors-link" href="http://drakontasconsulting.com/">
+                <img class="img-fluid gold-sponsor" src="sponsors/drakontas.png">
+              </a>
+            </div>
+            <div class="col-lg-4 col-6">
+              <a class="sponsors-link" href="https://citris-uc.org">
+                <img class="img-fluid gold-sponsor" src="sponsors/citris.png">
+              </a>
+            </div>
+            <div class="col-lg-4 col-6">
+              <a class="sponsors-link" href="https://csi.ucdavis.edu/">
+                <img class="img-fluid gold-sponsor" src="sponsors/csi.png">
+              </a>
+            </div>
+            <div class="col-lg-4 col-6">
+              <a class="sponsors-link" href="https://csi.ucdavis.edu/cfc/">
+                <img class="img-fluid gold-sponsor" src="sponsors/cfc.png">
+              </a>
+            </div>
+            <div class="col-lg-4 col-6">
+              <a class="sponsors-link" href="https://csi.ucdavis.edu/programs/beyond-tolerance/">
+                <img class="img-fluid gold-sponsor" src="sponsors/beyond_tolerance.png">
+              </a>
+            </div>
+            <div class="col-lg-4 col-6">
+              <a class="sponsors-link" href="https://www.ece.ucdavis.edu/">
+                <img class="img-fluid gold-sponsor" src="sponsors/davis_ece.png">
+              </a>
+            </div>
+            <div class="col-lg-4 col-6">
+              <a class="sponsors-link" href="https://siss.ucdavis.edu/">
+                <img class="img-fluid gold-sponsor" src="sponsors/siss.png">
+              </a>
+            </div>
+            <div class="col-lg-4 col-6">
+              <a class="sponsors-link" href="https://lettersandscience.ucdavis.edu/">
+                <img class="img-fluid gold-sponsor" src="sponsors/davis_lns.png">
+              </a>
+            </div>
+            <div class="col-lg-4 offset-lg-4 col-6">
+              <a class="sponsors-link" href="https://cosaf.ucdavis.edu">
+                <img class="img-fluid gold-sponsor" src="sponsors/cosaf.png">
+              </a>
+            </div>
+          </div>
+        </div> -->
+
+          <!-- Nonprofits
+        <br><br><br>
+        <p class="section-title" data-entrance="fade">
+          <span class="underline sponsors">nonprofits</span>
+        </p>
+        <div class="container" data-entrance="fade">
+          <div class="row">
+            <div class="col-lg-4 col-6">
+              <a class="sponsors-link" href="http://www.sassna.org">
+                <img class="img-fluid gold-sponsor" src="sponsors/wwcd.png">
+              </a>
+            </div>
+            <div class="col-lg-4 col-6">
+              <a class="sponsors-link" href="https://www.communitywatercenter.org/">
+                <img class="img-fluid gold-sponsor" src="sponsors/ilugd.png">
+              </a>
+            </div>
+            <div class="col-lg-4 offset-lg-0 col-6 offset-3">
+              <a class="sponsors-link" href="https://beyond12.org/">
+                <img class="img-fluid gold-sponsor" src="sponsors/beyond12.png">
+              </a>
+            </div>
+          </div>
+        </div> -->
+        <br><br>
+          <p class="sponsors-text">If you're interested in sponsoring us, please contact us at <a
+              href="mailto:infohackcity@gmail.com">infox@ipu.ac.in</a></p>
+  </section>
+  <!-- <section id="sponsor" class="sponsors-container">
+    <div class="container" data-entrance="fade">
+      <p class="section-title">
+        <span class="underline sponsors">sponsors</span>
+      </p> -->
+
+  <!-- <div class="container">
+        <!-- <div style="flex:flex-wrap">
+          <a href="./assets/pdf/HackDelhiIndiaBrochure.pdf" download><button
+              style="background: yellow;margin-bottom: 2px;margin-top: 2px" onMouseOver="this.style.background='gray'"
+              onMouseOut="this.style.background='yellow'"><i class="icon-download-alt"></i>&nbsp;&nbsp;Sponsorship
+              Brochure-India</button></a>
+          <a href="./assets/pdf/HackDelhiInternationalBrochure.pdf" download><button
+              style="background: yellow; margin-top: 2px;margin-bottom: 2px" onMouseOver="this.style.background='gray'"
+              onMouseOut="this.style.background='yellow'"><i class="icon-download-alt"></i>&nbsp;&nbsp;Sponsorship
+              Brochure-International</button></a>
+        </div> -->
+  </div>
+  </section>
+
+  <section class="contact-container">
+    <img src="img/RED.png" alt="logo" class="logo-picture">
+    <div id="footer-content">
+      <a href="mailto:infohackcity@gmail.com">
+        <i class="fa fa-envelope fa-sm" aria-hidden="true"></i>
+      </a>
+      <a href="https://www.facebook.com/infoxpression" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-facebook fa-sm" aria-hidden="true"></i>
+      </a>
+      <a href="https://www.instagram.com/infoxggsipu/" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-instagram fa-sm" aria-hidden="true"></i>
+      </a>
+    </div>
+    <!-- <div id="copyright">
+      <span>Made with ☕️ & 💛 By HackDelhi</span>
+    </div> -->
+  </section>
+
+  <a href="index.html#landing" id="scroll-to-top">
+    <i class="icon-chevron-up"></i>
+  </a>
+
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="assets/js/bundle.js"></script>
+</body>
+
+</html>
